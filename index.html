@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Invoice-1</title>
+
+
+    <style>
+        body{
+            font-family: sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .invoice-container{
+            max-width: 1200px;
+            margin: auto;
+            padding: 5px;
+            border: 2px solid #f531625b;
+            margin-top: 10px;
+            background: #FEF2F2
+
+        }
+        .invoice-header{
+            display: flex;
+            justify-content: space-between;
+            background: linear-gradient(to top right, #ffffcc 0%, #ff99cc 100%);
+            padding: 15px;
+
+        }
+        .invoice-logo{
+            margin: auto 0;
+        }
+        .invoice-logo img{
+            width: 215px;
+        }
+        .company-address h2{
+            margin-bottom: 0;
+        }
+        .company-address h3{
+            margin: 0;
+        }
+        .company-address p{
+            margin-top: 5px;
+        }
+        .customer-container{
+            padding: 15px;
+        }
+        
+        .customer-container h4{
+            margin-bottom: 0;
+            /* margin-top: 0; */
+        }
+        .customer-container p{
+            margin-top: 5px;
+        }
+        .customer-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .in-details h2{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .items-table{
+            width: 100%;
+            text-align: center;
+            
+        }
+        .footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+        .footer-invoice{
+            background: linear-gradient(to top right, #ffffcc 0%, #ff99cc 100%);;
+        }
+        .footer-text{
+            width: 60%;
+            
+        }
+        @media screen and  (min-width:451px) and (max-width:800px) {
+            body{
+                font-size: 70%;
+            }
+            .invoice-logo img{
+            width: 160px;
+        }
+            
+        }
+        @media screen and  (max-width:450px) {
+            body{
+                font-size: 50%;
+            }
+            .invoice-logo img{
+            width: 100px;
+        }
+            
+        }
+
+      </style>
+
+</head>
+<body>
+    <div class="invoice-container">
+        <div class="invoice-header">
+            <div class="invoice-logo">
+                <img src="./1655190278new logo TSI.png" alt="">
+            </div>
+            <div class="company-address">
+                <h2>Technopine Solution India</h2>
+                <h3>Web Development Company</h3>
+                <p>Abul Fazal Enclave <br>
+                New Delhi 110025 <br>
+                Email: contact@technopine.com</p>
+            </div>
+        </div>
+        <div class="customer-container">
+            <div class="customer-address">
+                <h2>Billing To</h2>
+                <h4>Dilshad Ahmad</h4>
+                <p>Abul Fazal Enclave <br>
+                    New Delhi 110025 <br>
+                    Email: dillubhai.com@gmail.com</p>
+            </div>
+            <div class="in-details">
+                <h2 >INVOICE</h2>
+                <table >
+                    <tr>
+                        <td>Invoice NO</td>
+                        <td>:</td>
+                        <td><b>#00001</b></td>
+                    </tr>
+                    <tr>
+                        <td>Due Date </td>
+                        <td>:</td>
+                        <td><b>10/06/2023</b></td>
+                    </tr>
+                    <tr>
+                        <td>Bill No</td>
+                        <td>:</td>
+                        <td><b>2498</b></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br><br>
+        <div class="details" style="text-align: center;"><h2>Billing Details</h2></div>
+        <div class="product-details">
+            <table class="items-table" border="1" cellspacing="0" cellpadding="5px">
+                <tr>
+                    <th>Sl. No.</th>
+                    <th>Items</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Discount</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Samsung Galaxy</td>
+                    <td>25000</td>
+                    <td>1</td>
+                    <td>3000</td>
+                    <td>22000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Samsung Galaxy</td>
+                    <td>25000</td>
+                    <td>1</td>
+                    <td>3000</td>
+                    <td>22000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Samsung Galaxy</td>
+                    <td>25000</td>
+                    <td>1</td>
+                    <td>3000</td>
+                    <td>22000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Samsung Galaxy</td>
+                    <td>25000</td>
+                    <td>1</td>
+                    <td>3000</td>
+                    <td>22000</td>
+                </tr>
+                <tr>
+                    <th colspan="4">Total</th>
+                    <th>12000</th>
+                    <th>88000</th>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <div class="footer-text" >
+                <h3>Thank You !!!</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa nulla necessitatibus quod nobis eaque dicta perspiciatis minima quas, veritatis assumenda laboriosam iste neque eveniet eligendi!</p>
+
+            </div>
+            <div class="footer-invoice">
+                <table border="1" cellspacing="0" cellpadding="5px">
+                    <tr>
+                        <td>Tax amount</td>
+                        
+                        <td><b>3500</b></td>
+                    </tr>
+                    <tr>
+                        <td>Grand Total</td>
+                        
+                        <td><b>91500</b></td>
+                    </tr>
+                    <tr>
+                        <td>Payed amount</td>
+                        
+                        <td><b>80000</b></td>
+                    </tr>
+                    <tr>
+                        <td>Due amount</td>
+                        
+                        <td><b>11500</b></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
